@@ -18,7 +18,7 @@ public class BeerDtoTest extends BaseTest {
 
     @Test
     void testDeserialize() throws IOException {
-        String json = "{\"id\":\"df79bbe4-0f50-4afe-a76f-d63f12b45546\",\"beerName\":\"beer name\",\"beerStyle\":\"Ale\",\"upc\":123123123123,\"createdDate\":\"2022-01-26T14:36:49.7774426+02:00\",\"lastUpdateDate\":\"2022-01-26T14:36:49.7784398+02:00\"}";
+        String json = "{\"beerName\":\"beer name\",\"beerStyle\":\"Ale\",\"upc\":123123123123,\"price\":\"12.99\",\"createdDate\":\"26-01-2022T15:02:27+0200\",\"lastUpdateDate\":\"2022-01-26T15:02:27.7193617+02:00\",\"id\":\"7a4dac84-a43c-4217-87fe-70a3b1fb9426\"}";
         BeerDto beerDto = objectMapper.readValue(json, BeerDto.class);
         System.out.println(beerDto);
     }
